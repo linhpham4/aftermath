@@ -216,15 +216,13 @@
     padding: 0.25rem;
     appearance: none;
     transition: 0.20s;
-    &::before {
+    &:not(:checked) {
       content: url("../../assets/icons/avatar.svg");
-      transform: scale(0.7);
-      filter: brightness(75%);
+      transform: scale(0.8);
+      opacity: 0.50;
     }
     &:checked {
       content: url("../../assets/icons/avatar.svg");
-      transform: scale(1.1);
-      filter: brightness(200%);
     }
     &:hover {
       cursor: pointer;
