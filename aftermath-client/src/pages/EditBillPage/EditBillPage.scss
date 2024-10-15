@@ -197,7 +197,7 @@
   }
 
   &__person-container {
-    width:10%;
+    width:20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +214,6 @@
   &__checkbox {
     margin-bottom: -0.25rem;
     padding: 0.25rem;
-    appearance: none;
     transition: 0.20s;
     &:not(:checked) {
       content: url("../../assets/icons/avatar.svg");
