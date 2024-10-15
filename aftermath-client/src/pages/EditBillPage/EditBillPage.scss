@@ -122,7 +122,7 @@
     display: flex;
     justify-content: space-between;
     &--column {
-      width: 14%;
+      width: 20%;
       display: flex;
       flex-flow: column wrap;
       align-content: flex-end;
@@ -159,7 +159,7 @@
     background-size: 1.2rem;
     background-position: right 100% top 50%;
     &--item-total {
-      width: 15%;
+      width: 22%;
     }
     &--tax-tip {
       width: 100%;
@@ -170,7 +170,7 @@
       color: rgb(151, 154, 196);
     }
     &--bill-total {
-      width: 14%;
+      width: 20%;
       text-align: right;
       color: rgb(151, 154, 196);
     }
@@ -184,7 +184,7 @@
   }
 
   &__item-split {
-    width: 20%;
+    width: 25%;
     text-align: right;
     color: grey;
     @include small;
@@ -197,7 +197,7 @@
   }
 
   &__person-container {
-    width:20%;
+    width:10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +212,9 @@
   }
 
   &__checkbox {
+    width: 50px;
     margin-bottom: -0.25rem;
+    appearance: none;
     padding: 0.25rem;
     transition: 0.20s;
     &:not(:checked) {
