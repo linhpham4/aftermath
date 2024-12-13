@@ -180,6 +180,7 @@
   }
 
   &__item-bottom {
+    width: 100%;
     display: flex;
   }
 
@@ -197,36 +198,31 @@
   }
 
   &__person-container {
-    width:15%;
+    width: 20%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:0 1.7rem;
     overflow: hidden;
-    gap: 1rem;
   }
   
   &__label {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-size: 0.9rem;
   }
 
   &__checkbox {
     width: 100%;
-    margin-bottom: -0.25rem;
     appearance: none;
-
-    padding: 0.25rem;
     transition: 0.20s;
     &:not(:checked) {
       content: url("../../assets/icons/avatar.svg");
-      transform: scale(2);
+      transform: scale(0.8);
       opacity: 0.50;
     }
     &:checked {
       content: url("../../assets/icons/avatar.svg");
-      transform: scale(2.3);
     }
     &:hover {
       cursor: pointer;
