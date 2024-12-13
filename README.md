@@ -1,5 +1,17 @@
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) 
+![](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)
+![](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
+![](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
 # Aftermath
 An app to split a restaurant bill between friends.
+
+https://github.com/user-attachments/assets/79a4459e-6d1b-40ab-8259-49f747a3d500
 
 ### Say goodbye to doing math after a dinner night out
 
@@ -9,7 +21,7 @@ Splitting a bill fairly can be a troublesome task when dining out with a large p
 
 ### Features
 
-Users will be able to:
+Users are able to:
 - Upload an image of their receipt
 - Edit any incorrect values after the image as been converted to text
 - Add names of their party members to the bill
