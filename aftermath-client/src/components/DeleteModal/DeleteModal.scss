@@ -1,0 +1,28 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.delete {
+  @include overlay;
+
+  &__container {
+    @include modal-container;
+    height: 17rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__close {
+    align-self: flex-end;
+    margin-top: -0.5rem;
+    @include close;
+  }
+
+  &__text {
+    text-align: center;
+    @include large;
+  }
+
+  &__confirm {
+    @include button;
+  }
+}
