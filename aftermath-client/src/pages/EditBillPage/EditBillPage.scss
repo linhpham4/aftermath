@@ -204,6 +204,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 1rem 1rem 0;
   }
   
   &__label {
@@ -213,16 +214,17 @@
 
   &__checkbox {
     width: 100%;
-    padding: 0.25rem;
+    margin-bottom: 1rem;
     appearance: none;
     transition: 0.20s;
     &:not(:checked) {
       content: url("../../assets/icons/avatar.svg");
-      transform: scale(0.8);
-      opacity: 0.50;
+      transform: scale(2);
+      opacity: 0.40;
     }
     &:checked {
       content: url("../../assets/icons/avatar.svg");
+      transform: scale(2.5);
     }
     &:hover {
       cursor: pointer;
