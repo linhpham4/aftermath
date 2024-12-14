@@ -279,8 +279,7 @@ const EditBillPage = () => {
                 {people.map((person) => {
                   return (
                     <div className="edit__person-container" key={person.id}>
-                      <label className="edit__label">
-                        <input
+                      <input
                           className={`edit__checkbox`}
                           type="checkbox"
                           id={`item${item.id}_person${person.id}`}
@@ -289,6 +288,7 @@ const EditBillPage = () => {
                           onChange={() => handleAssign(item.id, person.id)}
                           style={{ filter: `hue-rotate(${person.color}deg)` }}
                         />
+                      <label className="edit__label" for={`item${item.id}_person${person.id}`}>
                         {person.name}
                       </label>
                     </div>
