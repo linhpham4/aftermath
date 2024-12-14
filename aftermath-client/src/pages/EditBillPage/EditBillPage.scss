@@ -221,10 +221,16 @@
       content: url("../../assets/icons/avatar.svg");
       transform: scale(2);
       opacity: 0.40;
+      @include desktop {
+        transform: scale(0.8);
+      }
     }
     &:checked {
       content: url("../../assets/icons/avatar.svg");
       transform: scale(2.5);
+      @include desktop {
+        transform: scale(1);
+      }
     }
     &:hover {
       cursor: pointer;

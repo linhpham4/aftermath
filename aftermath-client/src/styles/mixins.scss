@@ -88,3 +88,9 @@
     transform: rotate(360deg);
   }
 }
+
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
