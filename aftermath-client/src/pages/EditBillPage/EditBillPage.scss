@@ -218,11 +218,12 @@
     transition: 0.20s;
     &:not(:checked) {
       content: url("../../assets/icons/avatar.svg");
-      transform: scale(0.8);
+      transform: scale(2.3);
       opacity: 0.50;
     }
     &:checked {
       content: url("../../assets/icons/avatar.svg");
+      transform: scale(2);
     }
     &:hover {
       cursor: pointer;
