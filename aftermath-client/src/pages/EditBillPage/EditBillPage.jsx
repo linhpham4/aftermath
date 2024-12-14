@@ -1,5 +1,6 @@
 import "./EditBillPage.scss";
 import avatar from "../../assets/icons/avatar.svg";
+import trashcan from "../../assets/icons/delete.svg";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -308,6 +309,12 @@ const EditBillPage = () => {
                 : ""
               )}</p>
             </div>
+
+            <img 
+              className="edit__delete"
+              src={trashcan}
+              alt="trashcan"
+            />
           </div>
         ))}
         {/* ---------------------------------------------------------------------------------------- */}
