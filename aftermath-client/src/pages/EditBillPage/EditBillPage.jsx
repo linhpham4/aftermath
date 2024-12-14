@@ -1,10 +1,10 @@
 import "./EditBillPage.scss";
 import avatar from "../../assets/icons/avatar.svg";
-import trashcan from "../../assets/icons/delete.svg";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import EditPersonNameModal from "../../components/EditPersonNameModal/EditPersonNameModal";
+import DeleteModal from "../../components/DeleteModal/DeleteModal";
 
 const EditBillPage = () => {
   const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
@@ -28,6 +28,8 @@ const EditBillPage = () => {
     person_total: 0
   }
 
+  const [deleteItemId, setDeleteItemId] = useState(null);
+  const [openDelete, setOpenDelete] = useState(false);
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [personId, setPersonId] = useState(null);
@@ -60,6 +62,11 @@ const EditBillPage = () => {
   useEffect(() => {
     getBill();
   }, []);
+
+  const handleDelete = (itemId) => {
+    setDeleteItemId(itemId);
+    setOpenDelete(true);
+  }
 
   // When new person is created, they get added to the people state variable
   useEffect(() => {
@@ -310,10 +317,11 @@ const EditBillPage = () => {
               )}</p>
             </div>
 
-            <img 
+            <input 
               className="edit__delete"
-              src={trashcan}
-              alt="trashcan"
+              type="button"
+              id={`item_${item.id}_delete`}
+              onClick={() => handleDelete(item.id)}
             />
           </div>
         ))}
@@ -377,6 +385,12 @@ const EditBillPage = () => {
         setName={setName}
         setPersonId={setPersonId}
         setColor={setColor}
+      />
+
+      <DeleteModal
+        open={openDelete}
+        close={() => setOpenDelete(false)}
+        itemId={deleteItemId}
       />
     </main>
   );
