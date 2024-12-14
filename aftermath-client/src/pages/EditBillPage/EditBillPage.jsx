@@ -278,7 +278,11 @@ const EditBillPage = () => {
                 {/* Dynamically render radio buttons based on list of people ----- */}
                 {people.map((person) => {
                   return (
-                    <div className="edit__person-container" key={person.id}>
+                    <div 
+                      className="edit__person-container" 
+                      key={person.id} 
+                      style={{ filter: `hue-rotate(${person.color}deg)` }}
+                    >
                       <input
                           className={`edit__checkbox`}
                           type="checkbox"
@@ -286,9 +290,12 @@ const EditBillPage = () => {
                           name="assign"
                           value={person.name}
                           onChange={() => handleAssign(item.id, person.id)}
-                          style={{ filter: `hue-rotate(${person.color}deg)` }}
                         />
-                      <label className="edit__label" for={`item${item.id}_person${person.id}`}>
+                      <label 
+                        className="edit__label" 
+                        for={`item${item.id}_person${person.id}`} 
+                        style={{ filter: `hue-rotate(-${person.color}deg)` }}
+                      >
                         {person.name}
                       </label>
                     </div>
