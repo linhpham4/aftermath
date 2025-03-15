@@ -16,6 +16,8 @@ Are you sick of pulling out that calculator app after a nice dinner night out wi
 
 Well, fret no more with this bill splitting app!
 
+Test it out for yourself: https://aftermath-split.netlify.app/
+
 https://github.com/user-attachments/assets/79a4459e-6d1b-40ab-8259-49f747a3d500
 
 ### Features
